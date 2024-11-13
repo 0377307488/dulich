@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <aside>
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Images/Slide_VN_png.png" class="d-block w-100 img-fluid" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/SLIDE2.jpg" class="d-block w-100 img-fluid" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/Slide_web__Nhat_Ban_1920x848px.png" class="d-block w-100 img-fluid" alt="...">
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="Images/SLIDE_HAN.jpg" class="d-block w-100 img-fluid" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/SLIDE_DL.jpg" class="d-block w-100 img-fluid" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </aside>
+    <div class="container mt-3">
+        <h2>TOP ĐỊA ĐIỂM DU LỊCH HOT</h2>
+        <p>Được nhiều gia đình lựa chọn làm nơi nghĩ dưỡng</p>
+        <div class="row " >
+            <div class="col-md-4"  ng-repeat="p in products | filter: 'HOT' " >
+                <div class="card ">
+                    <img ng-src="Images/{{p.image}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{p.name}}</h4>
+                        <p class="card-text">{{p.price}}</p>
+                        <a href="#" class="btn btn-primary">{{p.click}}</a>
+                    </div>
+                </div>
+        
+            </div>
+            
+            <!-- <div class="card col-md-4 " style="width:400px">
+                <img class="card-img-top" src="Images/tour-mien-trung-cao-cap-phu-yen-thumb.jpg" alt="Card image"
+                    style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">PHÚ QUỐC</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <div class="card col-md-4" style="width:400px">
+                <img class="card-img-top" src="Images/condao.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">CÔN ĐẢO</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <br>
+            <div class="card col-md-4 " style="width:400px">
+                <img class="card-img-top" src="Images/phuquoc.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">VŨNG TÀU</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <br>
+            <div class="card col-md-4 " style="width:400px">
+                <img class="card-img-top" src="Images/ninhvan.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">NINH VÂN</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <br>
+            <div class="card col-md-4 " style="width:400px">
+                <img class="card-img-top" src="Images/tour-du-thuyen-cao-cap-heritage-bia.jpg" alt="Card image"
+                    style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">VỊNH HẠ LONG</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <br> -->
+        </div>
+    </div>
+    <section class="bsb-hero-5 px-3" style="background-image: url('Images/header.PNG');">
+        <div style="min-height: 550px;" class="container-fluid position-relative d-flex align-items-center">
+            <div class="container-xxl">
+                <div class="">
+                    <div style="height: 100%;" class="col-12 col-md-11 col-lg-9 col-xl-8 col-xxl-7 d-flex">
+                        <div style="width: 620px;"
+                            class=" col-md-5 p-lg-5 text-white  box-content-banner bg-banner1 rounded-4 p-3">
+                            <h3 class="fw-bold mb-4">Poly Tour: Du lịch có Guu
+                            </h3>
+                            <p class="">
+                                <span class="col-12 col-sm-10 col-md-8 col-xxl-7">Poly Tour là đội ngũ với hơn 12 năm
+                                    kinh
+                                    nghiệm điều hành tour.
+                                    Chúng tôi đã đi qua 65 quốc gia, 270 thành phố và phục vụ hơn 120 đơn vị.</span>
+                            </p>
+                            <p class="fw-bold ">
+                                <span class="col-12 col-sm-10 col-md-8 col-xxl-7">Không chỉ thiết kế tour, chúng tôi
+                                    thiết
+                                    kế trải nghiệm trên mỗi chuyến đi.</span>
+                            </p>
+                            <div class="d-grid gap-3 d-sm-flex mt-2">
+                                <div class=" text-white fs-6 fw-semibold btn bsb-btn-2xl bg-color-main rounded-4">
+                                    <a class="text-decoration-none text-white" href="../ASM/lichtrinhtour.html">Lịch
+                                        Tour</a>
+                                </div>
+                                <div
+                                    class="text-white button-color  fs-6 fw-semibold btn bsb-btn-2xl btn-outline rounded-4 border border-2">
+                                    Tư vấn ngay
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="text-center" style="margin-top: 80px; margin-bottom: 20px;">
+            <h3>DÀNH RIÊNG CHO BẠN</h3>
+        </div>
+        <div class="container justify-content-center ">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-content d-flex justify-content-between">
+                            <div class="content-item">
+                                <div class="image-content card">
+                                    <img src="Images/tour-du-thuyen-5-sao-e1715748399423.jpg" class=" img-fluid"
+                                        alt="...">
+                                </div>
+                                <div class="content-info" >
+                                    <p>Du lịch Nhật Bản</p>
+                                    <p><strong>8,780,000đ</strong></p>
+                                    <a href="chitietsanpham.html">
+                                        <p><button><i class="fa-regular fa-eye"></i>Xem chi tiết</button></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="image-content card">
+                                    <img src="Images/tour-du-lich-sing-ma.jpg" class="img-fluid" alt="...">
+                                </div>
+                                <div class="content-info">
+                                    <p>Du lịch châu Âu</p>
+                                    <p><strong>23.780,000đ</strong></p>
+                                    <p><button><i class="fa-regular fa-eye"></i>Xem chi tiết</button></p>
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="image-content">
+                                    <img src="Images/tour-nhat-ban-cung-duong-vang.jpg" class="img-fluid" alt="...">
+                                </div>
+                                <div class="content-info">
+                                    <p>Du lịch Châu Úc</p>
+                                    <p><strong>32.382,000đ</strong></p>
+                                    <p><button><i class="fa-regular fa-eye"></i>Xem chi tiết</button></p>
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="image-content">
+                                    <img src="Images/tour-trung-quoc-phct-tgg-e1715748415305.jpg" class="img-fluid"
+                                        alt="...">
+                                </div>
+                                <div class="content-info">
+                                    <p>Du Lịch Châu Á</p>
+                                    <p><strong>10.780,000đ</strong></p>
+                                    <p><button><i class="fa-regular fa-eye"></i>Xem chi tiết</button></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-content d-flex justify-content-between">
+                            <div class="content-item">
+                                <div class="image-content">
+                                    <img src="Images/tour-du-lich-tho-nhi-ky-e1715748437251.jpg" class="img-fluid"
+                                        alt="...">
+                                </div>
+                                <div class="content-info">
+                                    <p> Du Lịch Hàn Quốc</p>
+                                    <p><strong>22.387,000đ</strong></p>
+                                    <p><button><i class="fa-regular fa-eye"></i>Xem chi tiết</button></p>
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="image-content">
+                                    <img src="Images/usa-7n6d-1.jpg" class="img-fluid" alt="...">
+                                </div>
+                                <div class="content-info">
+                                    <p>Du Lịch Trung Quốc</p>
+                                    <p><strong>12.382,000đ</strong></p>
+                                    <p><button><i class="fa-regular fa-eye"></i>Xem chi tiết</button></p>
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="image-content">
+                                    <img src="Images/tour-thanh-do-cuu-trai-cau-gau-truc-lac-son-khu-hoi-cao-toc-e1715748446299.jpg"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="content-info">
+                                    <p>Du Lịch Đảo</p>
+                                    <p><strong>8.780,000đ</strong></p>
+                                    <p><button><i class="fa-regular fa-eye"></i>Xem chi tiết</button></p>
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="image-content">
+                                    <img src="Images/tour-han-quoc-5-ngay-4-dem-seoul-nami-everland.jpg"
+                                        class="img-fluid" alt="...">
+                                </div>
+                                <div class="content-info">
+                                    <p>Du Lịch Côn Đảo</p>
+                                    <p><strong>9.741,000đ</strong></p>
+                                    <p><button><i class="fa-regular fa-eye"></i>Xem chi tiết</button></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <div class="text-center">
+            <h1 class="text-danger">DU LỊCH NƯỚC NGOÀI</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-content d-flex justify-content-between">
+                            <div class="content-item">
+                                <div class="image-content">
+                                    <img src="Images/nui-phu-si-mount-fuji-1.jpg" class="d-block w-100 rounded-circle"
+                                        alt="...">
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="image-content">
+                                    <img src="Images/baner-du-lich-uc.jpg" class="d-block w-100 rounded-circle"
+                                        alt="...">
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="image-content">
+                                    <img src="Images/trung-tam-dien-tu-akihabara.jpg"
+                                        class="d-block w-100 rounded-circle" alt="...">
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="image-content">
+                                    <img src="Images/9jpg.jpg" class="d-block w-100 rounded-circle" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" container mt-3 ">
+        <div class="row text-center bg-secondary-subtle">
+            <h2>TOUR NƯỚC NGOÀI <span class="text-bg-danger badge"> HOT</span> </h2>
+            <p>Được nhiều gia đình lựa chọn làm nơi nghĩ dưỡng</p>
+        </div>
+        <div class="container ">
+            <div class="row mt-2 mb-2 ">
+                <div class="col-sm-6 col-md-4 col-lg-3 " ng-repeat="p in products | filter: 'NGOAINUOC' | limitTo: 4" >
+                    <div class="card" >
+                        <img ng-src="Images/{{p.image}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{p.name}}</h5>
+                            <p class="card-text">{{p.tour}}</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Phương Tiện: {{p.phuongtien}}</li>
+                            <li class="list-group-item">Thời gian: {{p.time}}</li>
+                            <li class="list-group-item">Lịch trình: {{p.lichtrinh}}</li>
+                        </ul>
+                        <div class="card-body text-center">
+                            <span class=""> Giá Chỉ Từ: </span>
+                            <a href="#" class="card-link">
+                                <h1><span class="text-danger badge">{{p.price}}</span></h1>
+                            </a>
+                            <a href="#!detail/{{p.id}}" class="btn btn-outline-primary">xem ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Images/tour-trung-quoc-trinh-chau-khai-phong-lac-duong-tay-an.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">(HCM-JQ) Tour Úc Sydney - Melbourne 6N5Đ mùa đông trượt tuyết</h5>
+                            <p class="card-text">Du lịch Úc</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Phương Tiện</li>
+                            <li class="list-group-item">5 Ngày 4 Đêm</li>
+                            <li class="list-group-item">Tháng 5, 6, 7, 8, 9</li>
+                        </ul>
+                        <div class="card-body text-center">
+                            <span class=""> Giá Chỉ Từ: </span>
+                            <a href="#" class="card-link">
+                                <h1><span class="text-danger badge">27.990.000Đ</span></h1>
+                            </a>
+                            <button type="button" class="btn btn-outline-primary" style="font-weight: bolder;">XEM
+                                NGAY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Images/ho-ashi.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">(HCM-JV) Tour Nhật Bản ToKyo - Yamanashi - Narita 5N4Đ</h5>
+                            <p class="card-text">Du lịch Nhật Bản</p>
+                        </div>
+                        <ul class="list-group list-group-flus   h">
+                            <li class="list-group-item">Phương Tiện</li>
+                            <li class="list-group-item">5 Ngày 4 Đêm</li>
+                            <li class="list-group-item">Tháng 5, 6, 7, 8, 9</li>
+                        </ul>
+                        <div class="card-body text-center">
+                            <span class=""> Giá Chỉ Từ: </span>
+                            <a href="#" class="card-link">
+                                <h1><span class="text-danger badge">27.990.000Đ</span></h1>
+                            </a>
+                            <a href="chitiettour.html">
+                                <button type="button" class="btn btn-outline-primary " style="font-weight: bolder;">XEM
+                                    NGAY</button>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Images/5nuoc.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">(HCM-VN) Tour Du Lịch 5 nước Châu Âu: Đức - Hà Lan - Bỉ - Luxembourg- Pháp 5N4Đ</h5>
+                            <p class="card-text">Du lịch 5 nước châu Âu</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Phương Tiện</li>
+                            <li class="list-group-item">5 Ngày 4 Đêm</li>
+                            <li class="list-group-item">Tháng 5, 6, 7, 8, 9</li>
+                        </ul>
+                        <div class="card-body text-center">
+                            <span class=""> Giá Chỉ Từ: </span>
+                            <a href="#" class="card-link">
+                                <h1><span class="text-danger badge">27.990.000Đ</span></h1>
+                            </a>
+                            <button type="button" class="btn btn-outline-primary" style="font-weight: bolder;">XEM
+                                NGAY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Images/tour-dai-loan-cao-hung-gia-nghia-dai-bac.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">(HCM-JV) Tour Cao Hùng - Gia Nghĩa - Đài Bắc 5N4Đ</h5>
+                            <p class="card-text">Du lịch Đài Loan</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Phương Tiện</li>
+                            <li class="list-group-item">5 Ngày 4 Đêm</li>
+                            <li class="list-group-item">Tháng 5, 6, 7, 8, 9</li>
+                        </ul>
+                        <div class="card-body text-center">
+                            <span class=""> Giá Chỉ Từ: </span>
+                            <a href="#" class="card-link">
+                                <h1><span class="text-danger badge">27.990.000Đ</span></h1>
+                            </a>
+                            <button type="button" class="btn btn-outline-primary" style="font-weight: bolder;">XEM
+                                NGAY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Images/tour-chau-au-tay-au-6-nuoc-2048x1365.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">(HCM-T5) Tour Châu Âu 6 nước: Đức - Hà Lan - Bỉ - Pháp - Thụy Sĩ - Ý
+                                5N4Đ</h5>
+                            <p class="card-text">Du lịch 6 nước châu Âu</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Phương Tiện</li>
+                            <li class="list-group-item">5 Ngày 4 Đêm</li>
+                            <li class="list-group-item">Tháng 5, 6, 7, 8, 9</li>
+                        </ul>
+                        <div class="card-body text-center">
+                            <span class=""> Giá Chỉ Từ: </span>
+                            <a href="#" class="card-link">
+                                <h1><span class="text-danger badge">27.990.000Đ</span></h1>
+                            </a>
+                            <button type="button" class="btn btn-outline-primary" style="font-weight: bolder;">XEM
+                                NGAY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Images/thanh-co-dai-ly-2-247x165.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">(HCM-MU) Tour Côn Minh - Đại Lý - Lệ Giang - Shangrila 5N4Đ</h5>
+                            <p class="card-text">Du lịch Trung Quốc</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Phương Tiện</li>
+                            <li class="list-group-item">5 Ngày 4 Đêm</li>
+                            <li class="list-group-item">Tháng 5, 6, 7, 8, 9</li>
+                        </ul>
+                        <div class="card-body text-center">
+                            <span class=""> Giá Chỉ Từ: </span>
+                            <a href="#" class="card-link">
+                                <h1><span class="text-danger badge">27.990.000Đ</span></h1>
+                            </a>
+                            <button type="button" class="btn btn-outline-primary" style="font-weight: bolder;">XEM
+                                NGAY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Images/tour-ngoainuoc-hanquoc.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">(HCM-JV) Tour Hàn Quốc Nami - Seoul - Everland 5N4Đ</h5>
+                            <p class="card-text">Du lịch Hàn Quốc</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Phương Tiện</li>
+                            <li class="list-group-item">5 Ngày 4 Đêm</li>
+                            <li class="list-group-item">Tháng 5, 6, 7, 8, 9</li>
+                        </ul>
+                        <div class="card-body text-center">
+                            <span class=""> Giá Chỉ Từ: </span>
+                            <a href="#" class="card-link">
+                                <h1><span class="text-danger badge">27.990.000Đ</span></h1>
+                            </a>
+                            <button type="button" class="btn btn-outline-primary" style="font-weight: bolder;">XEM
+                                NGAY</button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="row ">
+            <div class="text-end">
+                <button type="button" class="btn btn-outline-info text-center">XEM THÊM <i
+                        class="bi bi-chevron-double-right"></i><i class="bi bi-chevron-double-right"></i></button>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container mt-5">
+        <div class="row text-center bg-primary-subtle">
+            <h2>TOUR DU THUYỀN <span class="text-bg-danger badge"> HOT</span> </h2>
+            <p>Được nhiều gia đình lựa chọn làm nơi nghĩ dưỡng</p>
+        </div>
+        <div class=" container-fluid mt-3">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3 " ng-repeat="p in products | filter: 'DUTHUYEN' ">
+                    <div class="card" style="width: 18rem;">
+                        <a href=""><img ng-src="Images/{{p.image}}" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <h5 class="card-title">{{p.name}}</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Phương Tiện:</li>
+                            <li class="list-group-item">Thời gian: {{ p.time}}</li>
+                            <li class="list-group-item">Lịch trình: {{p.lichtrinh}}</li>
+                        </ul>
+                        <div class="card-body text-center">
+                            <span class=""> Giá Chỉ Từ: </span>
+                            <a href="#" class="card-link">
+                                <h1><span class="text-danger badge">{{p.price}}</span></h1>
+                            </a>
+                            <a href="#!detail/{{p.id}}" type="button" class="btn btn-outline-primary">{{p.click}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="text-end">
+                <button type="button" class="btn btn-outline-info text-center">XEM THÊM <i
+                        class="bi bi-chevron-double-right"></i><i class="bi bi-chevron-double-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <div class="text-center">
+            <h1 class="text-danger">DU LỊCH TRONG NƯỚC</h1>
+        </div>
+        <div class="container">
+            <div class="container justify-content-center ">
+                <div id="carouselExample1" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-content d-flex justify-content-between">
+                                <div class="content-item">
+                                    <div class="image-content c">
+                                        <img src="Images/nhatrang.jpg" class=" img-fluid d-block w-100 rounded-circle"
+                                            alt="...">
+                                    </div>
+                                </div>
+                                <div class="content-item">
+                                    <div class="image-content ">
+                                        <img src="Images/condao1.jpg" class="img-fluid d-block w-100 rounded-circle"
+                                            alt="...">
+                                    </div>
+                                </div>
+                                <div class="content-item">
+                                    <div class="image-content">
+                                        <img src="Images/taybac.jpg" class="img-fluid d-block w-100 rounded-circle"
+                                            alt="...">
+                                    </div>
+                                </div>
+                                <div class="content-item">
+                                    <div class="image-content">
+                                        <img src="Images/hanoi.jpg" class="img-fluid d-block w-100 rounded-circle"
+                                            alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-content d-flex justify-content-between">
+                                <div class="content-item">
+                                    <div class="image-content">
+                                        <img src="Images/nhatrang.jpg" class="img-fluid d-block w-100 rounded-circle"
+                                            alt="...">
+                                    </div>
+                                </div>
+                                <div class="content-item">
+                                    <div class="image-content">
+                                        <img src="Images/danang.jpg" class="img-fluid d-block w-100 rounded-circle"
+                                            alt="...">
+                                    </div>
+                                </div>
+                                <div class="content-item">
+                                    <div class="image-content">
+                                        <img src="Images/nhatrang.jpg" class="img-fluid d-block w-100 rounded-circle"
+                                            alt="...">
+                                    </div>
+                                </div>
+                                <div class="content-item">
+                                    <div class="image-content">
+                                        <img src="Images/condao1.jpg" class="img-fluid d-block w-100 rounded-circle"
+                                            alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row text-center bg-primary-subtle">
+            <h2>TOUR TRONG NƯỚC<span class="text-bg-danger badge"> HOT</span> </h2>
+            <p>Được nhiều gia đình lựa chọn làm nơi nghĩ dưỡng</p>
+        </div>
+        <div class=" container-fluid">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3 " ng-repeat="p in products | filter: 'TRONGNUOC'">
+                    <div class="card" style="width: 18rem;">
+                        <img ng-src="Images/{{p.image}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{p.name}}</h5>
+                        
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Phương Tiện: {{}}</li>
+                            <li class="list-group-item">Thời gian: {{p.time}}</li>
+                            <li class="list-group-item">Lịch trình: {{p.lichtrinh}}</li>
+                        </ul>
+                        <div class="card-body text-center">
+                            <span class=""> Giá Chỉ Từ: </span>
+                            <a href="#" class="card-link">
+                                <h1><span class="text-danger badge">{{p.price}}</span></h1>
+                            </a>
+                            <a href="#!detail/{{p.id}}" type="button" class="btn btn-outline-primary">{{p.click}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        <div class="row ">
+            <div class="text-end">
+                <button type="button" class="btn btn-outline-info text-center">XEM THÊM <i class="bi bi-chevron-double-right"></i><i class="bi bi-chevron-double-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <aside class="container mt-5 mb-5">
+        <div class="mb-3 text-center ">
+            <label for="basic-url" class="form-label">
+                <h4><i class="bi bi-telephone-inbound-fill"></i> Vui Lòng Nhập số điện thoại để chúng tôi có thể tư vấn
+                </h4>
+            </label>
+            <div class="input-group">
+                <button class="btn btn-outline-primary" type="button" id="button-addon2">Xác Nhận số điện
+                    Thoại</button>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+            </div>
+        </div>
+        <iframe class="img-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.489281769132!2d106.61333337480492!3d10.773788089374841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c1796228053%3A0xeff89ff340da4452!2zMjI1LzE1LzEgxJAuIEzDqiBWxINuIFF14bubaSwgQsOsbmggVHLhu4sgxJDDtG5nLCBCw6xuaCBUw6JuLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1716369433742!5m2!1svi!2s" width="1300" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </aside>
+    <footer class="row bg-secondary-subtle ">
+        <div class="panel panel-default col-md-4 ">
+            <ul>
+                <h6>
+                    THÔNG TIN LIÊN HỆ
+                </h6>
+                <p>
+                    CÔNG TY CỔ PHẦN DU LỊCH INTERTOUR VIỆT NAM
+                </p>
+                <p> <span class="text-bg-success badge ms-auto">Trụ sở:</span> 115 Nguyễn Thái Bình, phường Nguyễn Thái
+                    Bình, Quận 1, Tp.HCM.</p>
+                <p>
+                    <span class="text-bg-success badge ms-auto"> Chi Nhánh Miền Tây:</span> 112B đường 3 Tháng 2, phường
+                    Hưng Lợi, Quận Ninh Kiều, Tp. Cần Thơ.
+                </p>
+                <a href="">
+                    <p><span class="text-bg-danger badge ms-auto"> Phone: (028) 3822 9999</span></p>
+                </a>
+                <a href="">
+                    <p><span class="text-bg-danger badge ms-auto">Mail: welcome@intertour.com.vn</span></p>
+                </a>
+                <p>
+                    MS Doanh Nghiệp: 0305032648
+                    GPLHQT: 79-350/2018/TCDL - GP LHQT
+                </p>
+            </ul>
+        </div>
+        <div class="panel panel-default col-md-4">
+            <ul>
+                <h6>Vì Sao Chọn Chúng Tôi</h6>
+                <img src="Images/BO-TROPHIES-DOC.jpg" class="img-fluid img-thumbnail" alt="">
+            </ul>
+        </div>
+        <div class="panel panel-default col-md-4">
+            <h6>Đăng ký nhận ưu đãi</h6>
+            <p>Bạn mình ơi, cứ hàng tháng thì Intertour đều có những chương trình ưu đãi về giá dịch vụ cũng như các quà
+                tặng hấp dẫn nhằm tri ân khách hàng. Để có thể cập nhật kịp thời những thông tin này, vui lòng nhập địa
+                chỉ email của bạn vào ô dưới đây, để Intertour có thể gửi cho bạn những chương trình này nhé! Thân, ^_^
+            </p>
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping"><i class="bi bi-send-check-fill"></i></span>
+                <input type="text" class="form-control" placeholder="Nhập địa chỉ email của bạn" aria-label="Username"
+                    aria-describedby="addon-wrapping">
+            </div>
+        </div>
+        <div class="panel-heading text-center">
+            <p>FPT Polytechnic &coppy; 2017. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

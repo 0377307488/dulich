@@ -1,0 +1,426 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "SÓC TRĂNG",
+            "price": 100000,
+            "image": "soctrang.jpg",
+            "click": "Xem ngay",
+            "category": "HOT",
+            "description": "Tham quan chùa Dơi nổi tiếng với hàng nghìn con dơi sinh sống. Thưởng thức các món đặc sản như bánh Pía, bún nước lèo."
+           
+        },
+        {
+            "id": 2,
+            "name": "PHÚ YÊN",
+            "price": 2000000,
+            "image": "tour-mien-trung-cao-cap-phu-yen-thumb.jpg",
+            "click": "Xem ngay",
+            "category": "HOT",
+            "description": "Khám phá vẻ đẹp hoang sơ của Gành Đá Đĩa, chiêm ngưỡng vẻ đẹp của bãi Xép, nơi quay bộ phim 'Tôi thấy hoa vàng trên cỏ xanh'."
+           
+        },
+        {
+            "id": 3,
+            "name": "CÔN ĐẢO",
+            "price": 300,
+            "image": "condao.jpg",
+            "click": "Xem ngay",
+            "category": "HOT",
+            "description": "Tham quan nhà tù Côn Đảo, nơi giam giữ những chiến sĩ cách mạng. Thưởng thức cảnh đẹp thiên nhiên tại bãi Đầm Trầu."
+           
+        },
+        {
+            "id": 4,
+            "name": "PHÚ QUỐC",
+            "price": 400,
+            "image": "phuquoc.jpg",
+            "click": "Xem ngay",
+            "category": "HOT",
+            "description": "Tham quan vườn quốc gia Phú Quốc, thư giãn tại bãi Sao và khám phá di tích lịch sử nhà tù Phú Quốc."
+           
+        },
+        {
+            "id": 5,
+            "name": "NINH VÂN",
+            "price": 500,
+            "image": "ninhvan.jpg",
+            "click": "Xem ngay",
+            "category": "HOT",
+            "description": "Thư giãn tại các khu nghỉ dưỡng cao cấp, chiêm ngưỡng vẻ đẹp yên bình của Vịnh Ninh Vân."
+           
+        },
+        {
+            "id": 6,
+            "name": "VỊNH HẠ LONG",
+            "price": 600,
+            "image": "tour-du-thuyen-cao-cap-heritage-bia.jpg",
+            "click": "Xem ngay",
+            "category": "HOT",
+            "description": "Tham quan Vịnh Hạ Long bằng du thuyền, chiêm ngưỡng cảnh quan hùng vĩ của hàng nghìn đảo đá vôi."
+           
+        },
+        {
+            "id": 7,
+            "name": "Product 7",
+            "price": 700,
+            "image": "7.jpeg",
+            "click": "Xem ngay",
+            "category": "miền Bắc",
+            "description": "Mô tả chi tiết về sản phẩm 7."
+           
+        },
+        {
+            "id": 8,
+            "name": "Product 8",
+            "price": 800,
+            "image": "8.jpeg",
+            "click": "Xem ngay",
+            "category": "miền Bắc",
+            "description": "Mô tả chi tiết về sản phẩm 8."
+           
+        },
+        {
+            "id": 9,
+            "name": "(HCM-JV) Tour Hàn Quốc Nami - Seoul - Everland 5N4Đ",
+            "price": "27.990.000Đ",
+            "treemduoi2": "17.990.000Đ",
+            "treem": "22.990.000Đ",
+            "image": "tour-ngoainuoc-hanquoc.png",
+            "tour": "Du lịch Hàn Quốc",
+            "time": "5 ngày 4 đêm",
+            "lichtrinh": "tháng 5, 6, 7, 8, 9",
+            "click": "Xem ngay",
+            "category": "NGOAINUOC",
+            "description": "Tham quan Làng Hanok Namsangol, Viện bảo tàng truyền thống dân gian Quốc Gia, Phủ Tổng Thống, Đảo Nami, Suối Cheonggyecheon và thiên đường vui chơi Everland.",
+            "ngay1": "Nami",
+            "ngay2": "Seoul",
+            "ngay3": "Everland",
+            "ngay4": "Thời gian tự do và trở về"
+        },
+        {
+            "id": 10,
+            "name": "(HCM-JV) Tour Nhật Bản ToKyo - Yamanashi - Narita 5N4Đ",
+            "price": "33.990.000Đ",
+            "treemduoi2": "23.990.000Đ",
+            "treem": "28.990.000Đ",
+            "image": "ho-ashi.jpg",
+            "tour": "Du lịch Nhật Bản",
+            "time": "5 ngày 4 đêm",
+            "lichtrinh": "tháng 5, 6, 7, 8, 9",
+            "click": "Xem ngay",
+            "category": "NGOAINUOC",
+            "description": "Khám phá Tokyo hiện đại, trải nghiệm núi Phú Sĩ tại Yamanashi, tham quan đền Asakusa Kannon ở Narita.",
+            "ngay1": "Asakusa Kannon",
+            "ngay2": "Mount Fuji",
+            "ngay3": "Tokyo Disneyland",
+            "ngay4": "Trở về"
+        },
+        {
+            "id": 11,
+            "name": "(HCM-VN) Tour Du Lịch 5 nước Châu Âu: Đức - Hà Lan - Bỉ - Luxembourg- Pháp 5N4Đ",
+            "price": "50.990.000Đ",
+            "treemduoi2": "40.990.000Đ",
+            "treem": "55.990.000Đ",
+            "image": "5nuoc.jpg",
+            "tour": "Du lịch 5 nước châu Âu",
+            "time": "6 ngày 5 đêm",
+            "lichtrinh": "tháng 5, 6, 7, 8, 9, 11, 1, 3",
+            "click": "Xem ngay",
+            "category": "NGOAINUOC",
+            "description": "Tham quan các thành phố nổi tiếng của châu Âu như Berlin, Amsterdam, Brussels, Luxembourg và Paris.",
+            "ngay1": "Berlin",
+            "ngay2": "Amsterdam",
+            "ngay3": "Brussels",
+            "ngay4": "Thành phố cuối cùng và trở về"
+        },
+        {
+            "id": 12,
+            "name": "(HCM-JQ) Tour Úc Sydney - Melbourne 6N5Đ mùa đông trượt tuyết",
+            "price": "27.990.000Đ",
+            "treemduoi2": "17.990.000Đ",
+            "treem": "22.990.000Đ",
+            "image": "tour-trung-quoc-trinh-chau-khai-phong-lac-duong-tay-an.jpg",
+            "tour": "Du lịch Úc",
+            "time": "5 ngày 4 đêm",
+            "lichtrinh": "tháng 5, 6, 7, 8, 9",
+            "click": "Xem ngay",
+            "category": "NGOAINUOC",
+            "description": "Khám phá vẻ đẹp hiện đại của Sydney, tham quan nhà hát Opera và cầu Sydney Harbour. Tận hưởng mùa đông trượt tuyết tại Melbourne, khám phá bảo tàng và khu vực lịch sử.",
+            "ngay1": "Sydney",
+            "ngay2": "Melbourne",
+            "ngay3": "Thời gian tự do và mua sắm",
+            "ngay4": "Trở về"
+        },
+        {
+            "id": 13,
+            "name": "(HCM-MU) Tour Côn Minh - Đại Lý - Lệ Giang - Shangrila 5N4Đ",
+            "price": "27.990.000Đ",
+            "treemduoi2": "17.990.000Đ",
+            "treem": "22.990.000Đ",
+            "image": "thanh-co-dai-ly-2-247x165.jpg",
+            "tour": "Du lịch Trung Quốc",
+            "time": "5 ngày 4 đêm",
+            "lichtrinh": "tháng 5, 6, 7, 8, 9",
+            "click": "Xem ngay",
+            "category": "NGOAINUOC",
+            "description": "Tham quan các di tích lịch sử và văn hóa tại Côn Minh, Đại Lý, Lệ Giang và Shangrila.",
+            "ngay1": "Côn Minh",
+            "ngay2": "Đại Lý",
+            "ngay3": "Lệ Giang",
+            "ngay4": "Shangrila và trở về"
+        },
+        {
+            "id": 14,
+            "name": "(HCM-T5) Tour Châu Âu 6 nước: Đức - Hà Lan - Bỉ - Pháp - Thụy Sĩ - Ý 7N6Đ",
+            "price": "78.990.000Đ",
+            "treemduoi2": "68.990.000Đ",
+            "treem": "73.990.000Đ",
+            "image": "tour-chau-au-tay-au-6-nuoc-2048x1365.png",
+            "tour": "Du lịch 6 nước châu Âu",
+            "time": "7 ngày 6 đêm",
+            "lichtrinh": "tháng 5, 6, 7, 8, 9",
+            "click": "Xem ngay",
+            "category": "NGOAINUOC",
+            "description": "Khám phá các điểm đến nổi tiếng của 6 nước châu Âu, bao gồm Berlin, Amsterdam, Brussels, Paris, Zurich và Rome.",
+            "ngay1": "Berlin",
+            "ngay2": "Amsterdam",
+            "ngay3": "Brussels",
+            "ngay4": "Paris và các thành phố khác trong chuyến hành trình"
+           
+        },
+        {
+            "id": 15,
+            "name": "(HCM-JV) Tour ÚC 5N4Đ",
+            "price": "27.990.000Đ",
+            "treemduoi2": "17.990.000Đ",
+            "treem": "22.990.000Đ",
+            "image": "baner-du-lich-uc.jpg",
+            "tour": "Du lịch Úc",
+            "time": "5 ngày 4 đêm",
+            "lichtrinh": "tháng 5, 6, 7, 8, 9",
+            "click": "Xem ngay",
+            "category": "NGOAINUOC",
+            "description": "Khám phá vẻ đẹp hiện đại của Sydney, tham quan nhà hát Opera và cầu Sydney Harbour. Tận hưởng các điểm tham quan nổi tiếng khác của Úc.",
+            "ngay1": "Sydney",
+            "ngay2": "Melbourne",
+            "ngay3": "Thời gian tự do và mua sắm",
+            "ngay4": "Trở về"
+            },
+            {
+            "id": 16,
+            "name": "(HCM-JQ) Tour Úc Sydney - Melbourne 6N5Đ mùa đông trượt tuyết",
+            "price": "27.990.000Đ",
+            "treemduoi2": "17.990.000Đ",
+            "treem": "22.990.000Đ",
+            "image": "tour-trung-quoc-trinh-chau-khai-phong-lac-duong-tay-an.jpg",
+            "tour": "Du lịch Úc",
+            "time": "5 ngày 4 đêm",
+            "lichtrinh": "tháng 5, 6, 7, 8, 9",
+            "click": "Xem ngay",
+            "category": "NGOAINUOC",
+            "description": "Khám phá vẻ đẹp hiện đại của Sydney, tham quan nhà hát Opera và cầu Sydney Harbour. Tận hưởng mùa đông trượt tuyết tại Melbourne, khám phá bảo tàng và khu vực lịch sử.",
+            "ngay1": "Sydney",
+            "ngay2": "Melbourne",
+            "ngay3": "Thời gian tự do và mua sắm",
+            "ngay4": "Trở về"
+            },
+            {
+            "id": 17,
+            "name": "(HCM-T5) Tour du thuyền 5* JoHor Bahru - Singapore - Kuala Lumpur 4N3D",
+            "price": "23.690.000Đ",
+            "treemduoi2": "13.990.000Đ",
+            "treem": "18.990.000Đ",
+            "image": "duthuyen2.png",
+            "time": "4 ngày 3 đêm",
+            "lichtrinh": "tháng 5, 6, 7, 8, 9",
+            "click": "Xem ngay",
+            "category": "DUTHUYEN",
+            "description": "Trải nghiệm du thuyền 5 sao, tham quan các điểm đến nổi tiếng của Johor Bahru, Singapore và Kuala Lumpur.",
+            "ngay1": "JoHor Bahru",
+            "ngay2": "Singapore",
+            "ngay3": "Kuala Lumpur",
+            "ngay4": "Trở về"
+            },
+            {
+            "id": 18,
+            "name": "(HCM-T5) Tour du thuyền 5* - Singapore - Malaisia 4N3D",
+            "price": "22.990.000Đ",
+            "treemduoi2": "12.990.000Đ",
+            "treem": "17.990.000Đ",
+            "image": "duthuyen3.jpeg",
+            "time": "4 ngày 3 đêm",
+            "lichtrinh": "tháng 5, 6, 7, 8, 9",
+            "click": "Xem ngay",
+            "category": "DUTHUYEN",
+            "description": "Trải nghiệm du thuyền 5 sao, tham quan các điểm đến nổi tiếng của Singapore và Malaysia.",
+            "ngay1": "Singapore",
+            "ngay2": "Malaysia",
+            "ngay3": "Thời gian tự do và mua sắm",
+            "ngay4": "Trở về"
+            },
+            {
+            "id": 19,
+            "name": "(HCM-T5) Tour du thuyền 5* Đài Loan - Nhật Bản Đẳng cấp Quốc tế 4N3D",
+            "price": "32.690.000Đ",
+            "treemduoi2": "22.990.000Đ",
+            "treem": "27.990.000Đ",
+            "image": "duthuyen1.png",
+            "time": "4 ngày 3 đêm",
+            "lichtrinh": "tháng 8, 9",
+            "click": "Xem ngay",
+            "category": "DUTHUYEN",
+            "description": "Trải nghiệm du thuyền 5 sao, tham quan các điểm đến nổi tiếng của Đài Loan và Nhật Bản.",
+            "ngay1": "Đài Loan",
+            "ngay2": "Nhật Bản",
+            "ngay3": "Thời gian tự do và mua sắm",
+            "ngay4": "Trở về"
+            },
+            {
+            "id": 20,
+            "name": "(HCM-T5) Tour du thuyền 5* Khám phá Đài Loan - Nhật Bản ( Đài Bắc) 4N3D",
+            "price": "23.690.000Đ",
+            "treemduoi2": "13.990.000Đ",
+            "treem": "18.990.000Đ",
+            "image": "duthuyen4.png",
+            "time": "4 ngày 3 đêm",
+            "lichtrinh": "tháng 5, 6, 7, 8, 9",
+            "click": "Xem ngay",
+            "category": "DUTHUYEN",
+            "description": "Trải nghiệm du thuyền 5 sao, khám phá các điểm đến nổi tiếng của Đài Loan và Nhật Bản (Đài Bắc).",
+            "ngay1": "Đài Loan",
+            "ngay2": "Nhật Bản",
+            "ngay3": "Thời gian tự do và mua sắm",
+            "ngay4": "Trở về"
+            },
+            {
+                "id": 21,
+                "name": "Phú Quốc và 3 đảo 3N2Đ",
+                "price": "12.690.000Đ",
+                "treemduoi2": "2.990.000Đ",
+                "treem": "7.990.000Đ",
+                "image": "phuquoc-3dao.jpg",
+                "time": "5 Ngày 4 Đêm",
+                "lichtrinh": "Tháng 5, 6, 7, 8, 9",
+                "click": "Xem ngay",
+                "category": "TRONGNUOC",
+                "description": "Tham quan Phú Quốc và các đảo lân cận, thư giãn tại các bãi biển đẹp và thưởng thức hải sản tươi ngon.",
+                "ngay1": "Phú Quốc",
+                "ngay2": "Đảo Hòn Móng Tay",
+                "ngay3": "Đảo Hòn Thơm",
+                "ngay4": "Trở về"
+            },
+            {
+                "id": 22,
+                "name": "Combo Quy Nhơn ",
+                "price": "12.000.000Đ",
+                "treemduoi2": "2.990.000Đ",
+                "treem": "7.990.000Đ",
+                "image": "trongnuoc1.jpg",
+                "time": "4 ngày 3 đêm",
+                "lichtrinh": "tháng 8, 9",
+                "click": "Xem ngay",
+                "category": "TRONGNUOC",
+                "description": "Khám phá bãi biển đẹp của Quy Nhơn, tham quan các địa danh nổi tiếng như Ghềnh Ráng Tiên Sa, Kỳ Co, Eo Gió.",
+                "ngay1": "Quy Nhơn",
+                "ngay2": "Ghềnh Ráng Tiên Sa",
+                "ngay3": "Kỳ Co",
+                "ngay4": "Trở về"
+            },
+            {
+                "id": 23,
+                "name": "Tour Hà Tiên - Phú Quốc",
+                "price": "22.690.000Đ",
+                "treemduoi2": "12.990.000Đ",
+                "treem": "17.990.000Đ",
+                "image": "trongnuoc2.jpg",
+                "time": "4 ngày 3 đêm",
+                "lichtrinh": "tháng 8, 9",
+                "click": "Xem ngay",
+                "category": "TRONGNUOC",
+                "description": "Khám phá vẻ đẹp của Hà Tiên, tham quan các địa danh nổi tiếng tại Phú Quốc và thưởng thức hải sản tươi ngon.",
+                "ngay1": "Hà Tiên",
+                "ngay2": "Phú Quốc",
+                "ngay3": "Thưởng thức hải sản",
+                "ngay4": "Trở về"
+            },
+            {
+                "id": 24,
+                "name": "Tour Đà Nẳng - Hội An - Bà Nà Hill",
+                "price": "25.690.000Đ",
+                "treemduoi2": "15.990.000Đ",
+                "treem": "20.990.000Đ",
+                "image": "trongnuoc3.jpg",
+                "time": "4 ngày 3 đêm",
+                "lichtrinh": "tháng 8, 9",
+                "click": "Xem ngay",
+                "category": "TRONGNUOC",
+                "description": "Khám phá vẻ đẹp của Đà Nẵng, tham quan phố cổ Hội An, trải nghiệm cáp treo và tham quan Bà Nà Hill.",
+                "ngay1": "Đà Nẵng",
+                "ngay2": "Hội An",
+                "ngay3": "Bà Nà Hill",
+                "ngay4": "Trở về"
+            },
+            {
+                "id": "dd1",
+                "diadiem":"NHẬT BẢN",
+                "check":"NOIDEN"
+                
+            },
+            {
+                "id": "dd2",
+                "diadiem":"HÀN QUỐC",
+                "check":"NOIDEN"
+                
+            },
+            {
+                "id": "dd3",
+                "diadiem":"BẮC KINH",
+                "check":"NOIDEN"
+            },
+            {
+                "id": "dd4",
+                "diadiem":"ÚC",
+                "check":"NOIDEN"
+            },
+            {
+                "id": "dd5",
+                "diadiem":"CANADA",
+                "check":"NOIDEN"
+            },
+            {
+                "id": "dd6",
+                "diadiem":"MALAISYA",
+                "check":"NOIDEN"
+            },
+            {
+                "id": "dd7",
+                "diadiem":"ÁO",
+                "check":"NOIDEN"
+            },
+            {
+                "id": "dd8",
+                "diadiem":"PHÁP",
+                "check":"NOIDEN"
+            }
+    ],
+    "user":
+    [
+        {
+            "fullname":"duytan",
+            "Email":"duytan@gmail.com",
+            "password":"1234567"
+        }
+    ]
+    ,
+    "giohang":
+    [
+        {
+            "id":"",
+            "name":"",
+            "treem":"",
+            "nguoilon":"",
+            "time":""
+        }
+    ]
+}

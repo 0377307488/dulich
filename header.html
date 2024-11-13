@@ -1,0 +1,221 @@
+<div ng-controller="myCtrl">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content " style="background-image: url('Imagse/header.webp');">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 text-bg-secondary" id="exampleModalLabel ">Đăng ký</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body  bg-banner1 ">
+                <div class="container">
+                    <div class="">
+                        <div class="card-header text-info text-center"><i class="bi bi-pencil-square "></i> NHẬP
+                            THÔNG TIN CỦA BẠN</div>
+                        <div class="card-body">
+                            <form name="formUser">
+                                <fieldset>
+                                    <!-- <legend>Disabled fieldset example</legend> -->
+                                    <div class="row">
+                                        <div class="mb-3 form-group text-light">
+                                            <label for="" class="form-label"><i class="bi bi-person-circle"></i> Họ và
+                                                tên</label>
+                                            <input type="text" class="form-control " placeholder="Nhập họ tên của bạn"
+                                                name="fullname" ng-model="fullname" ng-pattern="/^[a-zA-Z\s]+$/"
+                                                required>
+                                            <span class="text-warning"
+                                                ng-show="formUser.fullname.$error.pattern && !formUser.fullname.$pristine">Họ
+                                                tên không hợp lệ</span>
+                                        </div>
+                                        <div class="mb-3 form-group text-light ">
+                                            <label for="" class="form-label"><i class="bi bi-person-circle"></i>
+                                                email</label>
+                                            <input type="email" id="" class="form-control "
+                                                placeholder="Nhập họ tên của bạn" name="email" ng-model="email">
+                                            <span class="text-warning" ng-hide="formUser.email.$valid">Email không hợp
+                                                lệ</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mb-3 form-group text-light">
+                                            <label for="disabledSelect" class="form-label">Giới tính</label>
+                                            <select id="disabledSelect" class="form-select">
+                                                <option>NAM </option>
+                                                <option>NỮ</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3 form-group text-light">
+                                            <label for="" class="form-label"><i class="bi bi-key"></i> Mật khẩu
+                                                mới</label>
+                                            <input type="password" class="form-control" name="password"
+                                                ng-model="password" ng-minlength="6" required>
+                                            <span class="text-warning"
+                                                ng-show="formUser.password.$error.minlength && !formUser.password.$pristine">Mật
+                                                khẩu phải có ít nhất 6 kí tự</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mb-3 form-group text-light">
+                                            <label for="" class="form-label"><i class="bi bi-key"></i> Nhập lại
+                                                mật khẩu</label>
+                                            <input type="password" class="form-control" name="password2"
+                                                ng-model="password2" password-match="password" required>
+                                            <span class="text-warning"
+                                                ng-show="formUser.password2.$error.password-match && !formUser.password2.$pristine">Mật
+                                                khẩu không trùng khớp</span>
+                                        </div>
+                                        <div class="mb-3 form-group text-light">
+                                            <label for="" class="form-label"><i class="bi bi-telephone"></i> Số điện thoại</label>
+                                            <input type="text" class="form-control" name="phone"
+                                                ng-model="phone" ng-minlength="10" required>
+                                            <span class="text-warning"
+                                                ng-show="formUser.phone.$error.minlength && !formUser.phone.$pristine">
+                                                Số điện thoại không hợp lệ</span>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+               
+                <button type="submit" class="btn btn-outline-light"> <i class="bi bi-floppy-fill"></i>
+                    XÁC NHẬN</button>
+                <button type="submit" class="btn btn-white btn-outline-danger"> <i class="bi bi-stop-fill"></i>
+                    Hủy</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content " style="background-image: url('Imagse/header.webp');">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 text-light" id="exampleModalLabel ">Đăng nhập</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body  bg-banner1 ">
+                <div class="container">
+                    <div class="">
+                        <div class="card-header text-info text-center"><i class="bi bi-pencil-square "></i> NHẬP
+                            THÔNG TIN CỦA BẠN</div>
+                        <div class="card-body">
+                            <form name="formUser2">
+                                <fieldset>
+                                    <!-- <legend>Disabled fieldset example</legend> -->
+                                    <div class="row">
+                                        <div class="mb-3 form-group text-light">
+                                            <label for="" class="form-label"><i class="bi bi-person-circle"></i>
+                                                email</label>
+                                            <input type="email" id="" class="form-control "
+                                                placeholder="Nhập Email của bạn" name="email" ng-model="email">
+                                            <span class="text-warning" ng-hide="formUser2.email.$valid">Email không hợp
+                                                lệ</span>
+                                        </div>
+                                        <div class="mb-3 form-group text-light ">
+                                            <label for="" class="form-label"><i class="bi bi-key"></i> Mật khẩu
+                                                mới</label>
+                                            <input type="password" class="form-control" name="password"
+                                                ng-model="password" ng-minlength="6" required  placeholder="Nhập Password"> 
+                                            <span class="text-warning"
+                                                ng-show="formUser2.password.$error.minlength && !formUser2.password.$pristine">Mật
+                                                khẩu phải có ít nhất 6 kí tự</span>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-outline-light" ng-click()="reg()"><i class="bi bi-floppy-fill"></i>
+                    XÁC NHẬN</button>
+                <button type="submit" class="btn btn-white btn-outline-danger"> <i class="bi bi-stop-fill"></i>
+                    Hủy</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm justify-content-between">
+        <nav class="navbar navbar-expand-lg bg-primary-subtle">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#!"> <i class="bi bi-house-door-fill"></i> Trang chủ</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-telephone"></i> Hỗ trợ
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#!lienhe"> Trợ giúp </a></li>
+                                <li><a class="dropdown-item" href="#" ng-click="reg()"> Liên hệ với chúng tôi</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!lichkhoihanh"><i class="bi bi-alarm-fill"></i> Lịch khởi
+                                hành</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!dulichtrongnuoc"><i class="bi bi-airplane"></i> Du lịch
+                                trong nước</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!dulichngoainuoc"><i class="bi bi-airplane-fill"></i> Du
+                                lịch ngoài nước</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!duthuyen"><i class="bi bi-airplane-engines"></i> Du
+                                thuyền</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle s" href="" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-filter-left"></i> Dịch vụ khác
+                            </a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item " href="#">VISA MỸ - CANADA</a></li>
+                                <li><a class="dropdown-item" href="#">VISA ÚC - NEWZEALAND</a></li>
+                                <li><a class="dropdown-item" href="#">VISA CHÂU ÂU</a></li>
+                                <li><a class="dropdown-item " href="#">VISA HÀN - NHẬT - ĐÀI - TRUNG</a></li>
+                                <li><a class="dropdown-item" href="#">TOUR HÀNH HƯƠNG</a></li>
+                                <li><a class="dropdown-item" href="#">BOOK VÉ MÁY BAY</a></li>
+                                <li><a class="dropdown-item " href="#">BOOK PHÒNG KHÁCH SẠN</a></li>
+                                <li><a class="dropdown-item" href="#">TỔ CHỨC EVENT</a></li>
+                                <li><a class="dropdown-item" href="#">Du lịch Đài Loan</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!tintuc"><i class="bi bi-lightbulb"></i> Tin tức |</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-bg-success" href="#!chuyendi"><i class="bi bi-airplane"></i> Tour
+                                của bạn <span class="text-bg-danger badge">{{card.length}}</span></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav reserver">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!dangnhap"><i class="bi bi-person-circle"></i> Đăng
+                                nhập</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!dangky"><i class="bi bi-person-add"></i>
+                                Đăng Ký</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>

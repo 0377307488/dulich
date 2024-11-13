@@ -1,0 +1,189 @@
+<section class="bsb-hero-5 px-3" style="background-image: url('Images/header.png');">
+    <div style="min-height: 550px;" class="container-fluid position-relative d-flex align-items-center">
+        <div class="container-xxl">
+            <div class="">
+                <div style="height: 100%;" class="col-12 col-md-11 col-lg-9 col-xl-8 col-xxl-7 d-flex">
+                    <div style="width: 620px;"
+                        class=" col-md-5 p-lg-5 text-white  box-content-banner bg-banner1 rounded-4 p-3">
+                        <h3 class="fw-bold mb-4">Poly Tour: Du lịch có Guu
+                        </h3>
+                        <p class="">
+                            <span class="col-12 col-sm-10 col-md-8 col-xxl-7">Poly Tour là đội ngũ với hơn 12 năm
+                                kinh
+                                nghiệm điều hành tour.
+                                Chúng tôi đã đi qua 65 quốc gia, 270 thành phố và phục vụ hơn 120 đơn vị.</span>
+                        </p>
+                        <p class="fw-bold ">
+                            <span class="col-12 col-sm-10 col-md-8 col-xxl-7">Không chỉ thiết kế tour, chúng tôi
+                                thiết
+                                kế trải nghiệm trên mỗi chuyến đi.</span>
+                        </p>
+                        <div class="d-grid gap-3 d-sm-flex mt-2">
+                            <div class=" text-white fs-6 fw-semibold btn bsb-btn-2xl bg-color-main rounded-4">
+                                <a class="text-decoration-none text-white" href="../ASM/lichtrinhtour.html">Lịch
+                                    Tour</a>
+                            </div>
+                            <div
+                                class="text-white button-color  fs-6 fw-semibold btn bsb-btn-2xl btn-outline rounded-4 border border-2">
+                                Tư vấn ngay
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container mt-5 ">
+    <h2 class="text-bg-danger w-25 text-center">ĐẶT CHUYẾN</h2>
+    <div class="row">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">ĐẶT VÉ</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">LỊCH SỬ GIAO
+                    DỊCH</button>
+            </li>
+            </li>
+        </ul>
+        <div class="tab-content col-md-6" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0">
+                <table class="table">
+                    <thead class="text-center">
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">HÌNH ẢNH</th>
+                            <th scope="col">ĐỊA ĐIỂM</th>
+                            <th scope="col">GIÁ VÉ</th>
+                            <th scope="col">SỐ LƯỢNG</th>
+                            <th scope="col">THỜI GIAN</th>
+                            <th scope="col">XÓA CHUYẾN</th>
+                        </tr>
+                    </thead>
+                    <tbody class="align-items-center">
+                        <tr ng-repeat="item in card">
+                            <th scope="row">{{item.id}}</th>
+                            <td>
+                                <img ng-src="Images/{{item.image}}" class="card-img-top w-50" alt="...">
+                            </td>
+                            <td>
+                                {{item.name}}
+                            </td>
+                            <td class="text-center">
+                                <div class="col-md-6">
+                                    {{item.price}}
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <button ng-click="decreaseQuantity(item)" class="btn btn-sm btn-outline-secondary mx-2">-</button>
+                                    <span class="border px-2 py-1" ng-model="item.quantity" ng-chang="updatequantity(item)">{{item.quantity}}</span>
+                                    <button ng-click="increaseQuantity(item)" class="btn btn-sm btn-outline-secondary mx-2">+</button>
+                                </div>
+                            </td>
+                            <td>
+                                Thời gian: {{item.time}}
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-danger" ng-click="removecart(item)">XÓA</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                tabindex="0">
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <h5 class="card-header">CHUYẾN BAY CỦA BẠN</h5>
+                <div class="card-body">
+                    <div  ng-repeat="item in card">
+                        <h5 class="card-title">Địa điểm: {{item.name}}</h5>
+                        <p class="card-text">Số lượng: {{item.quantity}}</p>
+                        <p class="card-text">Giá vé: {{item.price}}</p>
+                        <p class="card-text">Thời Gian: {{item.time}}</p>
+                    </div>
+                    <h3 class="text-center">TỔNG TIỀN:</h1>
+                     <h1 class="text-center text-danger"> {{totalAmount | currency}}</h1>
+                  <a href="#" class="btn btn-primary">Đặt tour</a>
+                  <a href="#" class="btn btn-primary">Hủy </a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+<aside class="container mt-5 mb-5">
+    <div class="mb-3 text-center ">
+        <label for="basic-url" class="form-label">
+            <h4><i class="bi bi-telephone-inbound-fill"></i> Vui Lòng Nhập số điện thoại để chúng tôi có thể tư vấn
+            </h4>
+        </label>
+        <div class="input-group">
+            <button class="btn btn-outline-primary" type="button" id="button-addon2">Xác Nhận số điện
+                Thoại</button>
+            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+        </div>
+    </div>
+    <iframe class="img-fluid"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.489281769132!2d106.61333337480492!3d10.773788089374841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c1796228053%3A0xeff89ff340da4452!2zMjI1LzE1LzEgxJAuIEzDqiBWxINuIFF14bubaSwgQsOsbmggVHLhu4sgxJDDtG5nLCBCw6xuaCBUw6JuLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1716369433742!5m2!1svi!2s"
+        width="1300" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+</aside>
+<footer class="row bg-secondary-subtle ">
+    <div class="panel panel-default col-md-4 ">
+        <ul>
+            <h6>
+                THÔNG TIN LIÊN HỆ
+            </h6>
+            <p>
+                CÔNG TY CỔ PHẦN DU LỊCH INTERTOUR VIỆT NAM
+            </p>
+            <p> <span class="text-bg-success badge ms-auto">Trụ sở:</span> 115 Nguyễn Thái Bình, phường Nguyễn Thái
+                Bình, Quận 1, Tp.HCM.</p>
+            <p>
+                <span class="text-bg-success badge ms-auto"> Chi Nhánh Miền Tây:</span> 112B đường 3 Tháng 2, phường
+                Hưng Lợi, Quận Ninh Kiều, Tp. Cần Thơ.
+            </p>
+            <a href="">
+                <p><span class="text-bg-danger badge ms-auto"> Phone: (028) 3822 9999</span></p>
+            </a>
+            <a href="">
+                <p><span class="text-bg-danger badge ms-auto">Mail: welcome@intertour.com.vn</span></p>
+            </a>
+            <p>
+                MS Doanh Nghiệp: 0305032648
+                GPLHQT: 79-350/2018/TCDL - GP LHQT
+            </p>
+        </ul>
+    </div>
+    <div class="panel panel-default col-md-4">
+        <ul>
+            <h6>Vì Sao Chọn Chúng Tôi</h6>
+            <img src="Images/BO-TROPHIES-DOC.jpg" class="img-fluid img-thumbnail" alt="">
+        </ul>
+    </div>
+    <div class="panel panel-default col-md-4">
+        <h6>Đăng ký nhận ưu đãi</h6>
+        <p>Bạn mình ơi, cứ hàng tháng thì Intertour đều có những chương trình ưu đãi về giá dịch vụ cũng như các quà
+            tặng hấp dẫn nhằm tri ân khách hàng. Để có thể cập nhật kịp thời những thông tin này, vui lòng nhập địa
+            chỉ email của bạn vào ô dưới đây, để Intertour có thể gửi cho bạn những chương trình này nhé! Thân, ^_^
+        </p>
+        <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping"><i class="bi bi-send-check-fill"></i></span>
+            <input type="text" class="form-control" placeholder="Nhập địa chỉ email của bạn" aria-label="Username"
+                aria-describedby="addon-wrapping">
+        </div>
+    </div>
+    <div class="panel-heading text-center">
+        <p>FPT Polytechnic &coppy; 2017. All rights reserved.</p>
+    </div>
+</footer>
